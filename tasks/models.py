@@ -27,7 +27,7 @@ class Task(models.Model):
 
 class User (AbstractUser):
     id = models.TextField(primary_key = True,default = uuid.uuid4,editable = False)
-    age             = models.IntegerField(default=0)
+    age             = models.IntegerField(default=18)
     USERNAME_FIELD  = 'username'
     REQUIRED_FIELDS = ['age']
     def __str__(self):
